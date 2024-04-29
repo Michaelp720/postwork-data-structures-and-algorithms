@@ -1,14 +1,14 @@
 function findShortestStringRecursive(arr) {
   // type your code here
   //loop through the array, returning 
+
+  //base case
   if (arr.length === 1) {
     return arr[0];
   }
 
+  //recursive case
   const shortest = findShortestStringRecursive(arr.slice(1))
-
-
-
   return arr[0].length <= shortest.length ? arr[0] : shortest
 
 
